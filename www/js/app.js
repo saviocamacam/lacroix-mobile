@@ -138,7 +138,7 @@ todoApp.controller("ListsController", function($scope, $ionicPlatform, $cordovaS
     }
 });
 
-todoApp.controller("ItemsController", function($scope, $ionicPlatform) {
+todoApp.controller("ItemsController", function($scope, $ionicPlatform, $cordovaSQLite, $stateParams, $ionicPopup) {
   $scope.items = [];
  
     $ionicPlatform.ready(function() {
