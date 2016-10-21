@@ -90,7 +90,7 @@ todoApp.controller("CategoriesController", function($scope, $ionicPlatform, $cor
     });
 });
 
-todoApp.controller("ListsController", function($scope, $ionicPlatform, $cordovaSQLite, $stateParams) {
+todoApp.controller("ListsController", function($scope, $ionicPlatform, $cordovaSQLite, $stateParams, $ionicPopup) {
    $scope.lists = [];
  
     $ionicPlatform.ready(function() {
